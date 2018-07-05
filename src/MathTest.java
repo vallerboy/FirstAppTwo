@@ -7,6 +7,7 @@ public class MathTest {
         long firstStop = System.currentTimeMillis();
 
 
+
         long secondStart = System.currentTimeMillis();
         double powTwo = 123D;
         for (int i = 0; i < 10000D; i++) {
@@ -16,5 +17,7 @@ public class MathTest {
 
         System.out.println("Wynik math: " + (firstStop - firstStart));
         System.out.println("Wynik petli: " + (secondStop - secondStart));
+
+        System.out.println(Math.pow(25D, 1.0 / 2.0));
     }
 }
