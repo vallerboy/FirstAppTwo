@@ -9,10 +9,10 @@ public class Game {
         players = new Player[playersCount];
     }
 
-    public void addPlayer(Player player){
+    public void addPlayer(Player newYourPlayer){
         for (int i = 0; i < players.length; i++) {
             if(players[i] == null){
-                players[i] = player;
+                players[i] = newYourPlayer;
                 break;
             }
         }
