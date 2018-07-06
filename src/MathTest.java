@@ -18,6 +18,7 @@ public class MathTest {
         System.out.println("Wynik math: " + (firstStop - firstStart));
         System.out.println("Wynik petli: " + (secondStop - secondStart));
 
-        System.out.println(Math.pow(25D, 1.0 / 2.0));
+
+        System.out.println(Math.cbrt(125D) % 1D == 0);
     }
 }
