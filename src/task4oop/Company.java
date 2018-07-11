@@ -23,4 +23,6 @@ public class Company {
             System.out.println("Imie: " + employee.getName());
         }
     }
+
+    //todo zrobic metode do kasy
 }

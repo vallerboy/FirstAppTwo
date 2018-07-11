@@ -18,6 +18,10 @@ public class Game {
         }
     }
 
+    public int getMaxPlayerCount() {
+        return players.length;
+    }
+
     public Player getGameWinner(){
         Player winner = players[0];
         for (Player player : players) {
@@ -31,4 +35,9 @@ public class Game {
     public String getName() {
         return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }
