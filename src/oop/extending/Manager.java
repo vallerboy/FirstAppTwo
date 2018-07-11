@@ -1,4 +1,4 @@
-package extending;
+package oop.extending;
 
 public class Manager extends Worker {
     private int extraSalary;

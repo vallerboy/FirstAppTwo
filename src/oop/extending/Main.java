@@ -1,8 +1,4 @@
-package extending;
-
-import com.sun.corba.se.spi.orbutil.threadpool.Work;
-
-import java.lang.reflect.WildcardType;
+package oop.extending;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package extending;
+package oop.extending;
 
 public class Boss extends Manager {
     private String car;
