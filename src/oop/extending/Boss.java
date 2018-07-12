@@ -24,4 +24,9 @@ public class Boss extends Manager {
     public void shout() {
         System.out.println("do jakiej restauracji dzis pojechac?!!!!!!!!");
     }
+
+    @Override
+    public void sellCompany() {
+        System.out.println("byebye 20 mln wpada");
+    }
 }

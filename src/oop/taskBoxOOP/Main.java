@@ -1,4 +1,4 @@
-package taskBoxOOP;
+package oop.taskBoxOOP;
 
 import java.util.Scanner;
 

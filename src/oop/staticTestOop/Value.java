@@ -1,4 +1,4 @@
-package staticTestOop;
+package oop.staticTestOop;
 
 public class Value {
     private static String someText;

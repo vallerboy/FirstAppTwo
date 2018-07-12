@@ -32,6 +32,12 @@ public class Starter {
         printNumber(age);
         printNumber(15);
 
+        IManagement[] management = new IManagement[4];
+        management[0]  = bossOskar;
+        management[1]  = manager;
+
+
+
     }
 
     public static void printMenu(Worker worker){

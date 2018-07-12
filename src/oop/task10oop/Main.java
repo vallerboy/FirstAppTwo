@@ -1,4 +1,4 @@
-package task10oop;
+package oop.task10oop;
 
 public class Main {
     public static void main(String[] args) {

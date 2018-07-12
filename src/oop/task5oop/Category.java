@@ -1,4 +1,4 @@
-package task5oop;
+package oop.task5oop;
 
 public class Category {
     private String name;

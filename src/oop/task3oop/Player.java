@@ -1,4 +1,4 @@
-package task3oop;
+package oop.task3oop;
 
 public class Player {
     private String name;

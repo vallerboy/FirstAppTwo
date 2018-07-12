@@ -1,4 +1,4 @@
-package task4oop;
+package oop.task4oop;
 
 public class Employee {
     private String name;

@@ -1,4 +1,4 @@
-package taskBoxOOP;
+package oop.taskBoxOOP;
 
 public class Box {
     private int height;

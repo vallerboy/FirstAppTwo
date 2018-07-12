@@ -1,4 +1,4 @@
-package task10oop;
+package oop.task10oop;
 
 
 import java.util.Objects;

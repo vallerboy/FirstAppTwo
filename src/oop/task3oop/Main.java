@@ -1,4 +1,4 @@
-package task3oop;
+package oop.task3oop;
 import java.util.Random;
 import  java.util.Scanner;
 
