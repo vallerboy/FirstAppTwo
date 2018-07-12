@@ -20,10 +20,10 @@ public class Box {
     }
 
     public Box joinDiagonal(Box ... boxes){
-        int widthSum = 0;
+        int widthSum = getWidth();
 
         for (Box box : boxes) {
-            widthSum += box.getWidth();
+            widthSum += box.getWidth() + box.getHeight();
         }
         return new Box(widthSum);
     }

@@ -1,6 +1,8 @@
 package oop.extending;
 
-public class Main {
+public class Starter {
+
+
     public static void main(String[] args) {
         Worker oskar = new Worker("Oskar", "Polak");
         System.out.println(oskar.getName());
@@ -29,6 +31,7 @@ public class Main {
         int age = 15;
         printNumber(age);
         printNumber(15);
+
     }
 
     public static void printMenu(Worker worker){

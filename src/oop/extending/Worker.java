@@ -1,6 +1,6 @@
 package oop.extending;
 
-public class Worker {
+public class Worker extends Employee{
     private String name;
     private String surname;
     private int salary;

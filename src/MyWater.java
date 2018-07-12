@@ -1,13 +1,15 @@
 public class MyWater {
-    private final int BIG_BOTTLE = 2;
-    private final int MEDIUM_BOTTLE = 1;
-    private final double SMALL_BOTTLE = 0.5;
+    private static final int BIG_BOTTLE = 2;
+    private static final int MEDIUM_BOTTLE = 1;
+    private static final double SMALL_BOTTLE = 0.5;
+
 
     private int bigBottleCount;
     private int mediumBottleCount;
     private int smallBottleCount;
 
     public MyWater() {
+        System.out.println(bigBottleCount);
     }
 
     public void addBig(int howMany){
