@@ -2,7 +2,10 @@ package files;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.LinkedList;
 import java.util.Scanner;
+import java.util.Stack;
+import java.util.Vector;
 
 public class Task4Files {
     public static void main(String[] args) {
