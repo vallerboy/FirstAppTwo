@@ -4,10 +4,13 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Task5Files {
+
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -19,10 +22,11 @@ public class Task5Files {
             System.exit(0);
         }
 
-        List<String> lines = null;
+        List<String> lines;
         try {
             lines = Files.readAllLines(file.toPath());
         } catch (IOException e) {
+            lines = new ArrayList<>();
             e.printStackTrace();
         }
 
