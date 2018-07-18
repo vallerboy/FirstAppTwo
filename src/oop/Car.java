@@ -38,4 +38,6 @@ public class Car {
     public void show(){
         System.out.println("Brand: " + brand + " " + model);
     }
+
+    Object
 }
