@@ -39,5 +39,5 @@ public class Car {
         System.out.println("Brand: " + brand + " " + model);
     }
 
-    Object
+    
 }
