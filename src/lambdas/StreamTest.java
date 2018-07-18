@@ -39,8 +39,8 @@ public class StreamTest {
                 .filter(s -> s.length() > 5)
                 .collect(Collectors.toList());
 
-        Map<Integer, List<String>> counting = names.stream()
-                .collect(Collectors.groupingBy(s -> s.length()));
+        Map<Character, List<String>> counting = names.stream()
+                .collect(Collectors.groupingBy(s -> s.charAt(0)));
 
         System.out.println(counting);
 
