@@ -7,9 +7,8 @@ public class SomeError {
         Value age = new Value();
 
 
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 2000; i++) {
             new SomeThreadTask(age).start();
-            System.out.println(age.getAge());
         }
 
 
@@ -17,7 +16,7 @@ public class SomeError {
     }
 
     public static class Value{
-        private int age;
+        private volatile int age;
 
         public  int getAge() {
             return age;
@@ -44,8 +43,9 @@ public class SomeError {
         }
 
         private  void makeAction() {
-            for (int i = 0; i < 5000; i++) {
+            for (int i = 0; i < 1000; i++) {
                 age.action();
+                System.out.println(age.getAge());
             }
         }
     }
