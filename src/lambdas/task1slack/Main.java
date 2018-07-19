@@ -11,7 +11,7 @@ public class Main {
         people.add(jakisPerson);
         people.add(new Person("Adam", "Nawałka", 10));
         people.add(new Person("Tomek", "Nawałka", 10));
-        people.add(new Person("Ktoś", "Nawałka", 10));
+        people.add(new Person("Ktoś", "Nawałka", 11));
         people.add(new Person("Siema", "Nijaki", 10));
         people.add(new Person("Ema", "Nijaki", 10));
         people.add(new Person("Oskar", "Polak", 10));
@@ -44,5 +44,36 @@ public class Main {
 //            System.out.println("User, no niestety, wystapil gdzies null");
 //            System.exit(0);
 //        }
+
+        //Zadanie 3
+       Optional<Person> person = people.stream()
+                .sorted(( s, s1) -> Integer.compare(s.getAge(), s1.getAge()) * -1)
+                .limit(1)
+                .map(s -> new Person("Mędrzec: " + s.getName(), s.getSurname(), s.getAge()))
+                .findAny();
+
+       if(person.isPresent()){
+           System.out.println("zrob cos");
+           System.out.println(person.get());
+       }
+
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
