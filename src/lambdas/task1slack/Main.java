@@ -1,9 +1,6 @@
 package lambdas.task1slack;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -19,21 +16,33 @@ public class Main {
         people.add(new Person("Ema", "Nijaki", 10));
         people.add(new Person("Oskar", "Polak", 10));
 
-        Map<String, List<Person>> stringListMap = people.stream()
-                .collect(Collectors.groupingBy((Person s) -> s.getSurname()));
+//        Map<String, List<Person>> stringListMap = people.stream()
+//                .collect(Collectors.groupingBy((Person s) -> s.getSurname()));
+//
+//
+//       stringListMap.entrySet()
+//                .stream()
+//                .max((s, s1) -> Integer.compare(s.getValue().size(), s1.getValue().size()))
+//                .ifPresent(s -> System.out.println(s.getKey()));
+//
+//        String text = null;
+//        Optional<String> optional = Optional.ofNullable(text);
+//
+//        if (optional.isPresent()) {
+//            System.out.println(optional.get().length());
+//        }
 
+        //Zadanie 2
+        System.out.println(people.stream()
+                .mapToDouble(s -> s.getAge())
+                .average()
+                .orElseThrow(() -> new IllegalStateException()));
 
-       stringListMap.entrySet()
-                .stream()
-                .max((s, s1) -> Integer.compare(s.getValue().size(), s1.getValue().size()))
-                .ifPresent(s -> System.out.println(s.getKey()));
-
-        String text = null;
-        Optional<String> optional = Optional.ofNullable(text);
-
-        if (optional.isPresent()) {
-            System.out.println(optional.get().length());
-        }
-
+//        if(optionalDouble.isPresent()){
+//            System.out.println(optionalDouble.getAsDouble());
+//        }else{
+//            System.out.println("User, no niestety, wystapil gdzies null");
+//            System.exit(0);
+//        }
     }
 }
