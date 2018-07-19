@@ -1,4 +1,4 @@
-package lambdas.task1slack;
+package lambdas.taskslack;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -16,9 +16,9 @@ public class Main {
         people.add(new Person("Ema", "Nijaki", 10));
         people.add(new Person("Oskar", "Polak", 10));
 
-//        Map<String, List<Person>> stringListMap = people.stream()
-//                .collect(Collectors.groupingBy((Person s) -> s.getSurname()));
-//
+        Map<Integer, List<Person>> stringListMap = people.stream()
+                .collect(Collectors.groupingBy((Person s) -> s.getSurname().length() + s.getName().length()));
+
 //
 //       stringListMap.entrySet()
 //                .stream()

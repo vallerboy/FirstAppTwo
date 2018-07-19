@@ -1,4 +1,4 @@
-package lambdas.task1slack;
+package lambdas.taskslack;
 
 import java.util.Objects;
 
